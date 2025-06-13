@@ -1,2 +1,11 @@
-# Portfolio
-dagrawal429.github.io/portfolio
+# Project Management
+
+##Education
+Bachelors Engineering
+Master in Information MAnagement
+
+Work Experience 
+# Accenture 
+
+#Projects
+
