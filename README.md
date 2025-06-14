@@ -10,6 +10,38 @@ I'm Divya Agrawal, an experienced Project and Program Manager with 5+ years of d
 
 ---
 
+---
+
+## 💼 Work Experience
+
+### **Senior Software Analyst – Accenture, India (06/2021 – 01/2023)**
+
+- Managed large-scale projects, leading a 17-member team using Agile frameworks.
+- Improved efficiency by 30% via automation tools and reduced delays by 25%.
+- Built Power BI/Tableau dashboards, increasing executive visibility by 40%.
+
+### **Software Analyst – Accenture, India (09/2017 – 05/2021)**
+
+- Managed timelines, budgets, and resource allocation across business units.
+- Automated regression testing using Selenium, reducing test time by 50%.
+- Developed pricing models, boosting client profitability by 20%.
+
+---
+
+## 🎓 Education
+
+### **Master of Science in Information Management**  
+**University of Washington**, 4.0/4.0 GPA | *Expected: 01/2025 – 12/2025*  
+
+The MSIM program has helped me become a product and project management professional with expertise in BI. I’ve gained strong skills in data research, analysis, and visualization using **R, SQL, Power BI, Tableau, and QlikView**, while also strengthening my leadership, ethical decision-making, and consulting capabilities.
+
+### **Bachelor of Engineering**  
+**Mumbai University**, 3.4/4.0 GPA | *08/2013 – 06/2017*  
+
+I developed strong foundational programming knowledge in **C, Python, MATLAB**, along with understanding of probability, statistics, and communication skills. Through extracurricular activities, I refined my leadership and strategic event coordination skills.
+
+---
+
 ## 📊 Featured Project: AI in Recruitment – Fair Hiring Decision Framework
 
 This project explores AI-driven hiring models and their biases. It combines project planning, data analysis, and ethical considerations—a unique intersection of management and data.
@@ -69,6 +101,17 @@ Although results were inconclusive, the project laid groundwork for:
 - Importance of **sample size** and **data quality**
 - Need for a blend of **quantitative + qualitative** methods
 - How to **manage research setbacks** transparently in a project lifecycle
+
+## 🔮 Future Focus: Data Ethics in Cybersecurity & Fraud Prevention
+
+Inspired by the growing digital threat landscape, I aim to explore:
+
+- **Fraudulent data detection using anomaly detection models**
+- **Behavioral analytics to prevent cyberattacks**
+- **Risk dashboards using Power BI for real-time threat alerts**
+
+> Combining data governance and cybersecurity is the next impactful direction I plan to pursue.
+
 
 ## 📁 Repository Contents
 
