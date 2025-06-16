@@ -6,7 +6,7 @@ Experienced Program, Product, and Project Manager with over 5 years in enterpris
 ---
 
 ## 💼 Resume
-📄 [Download my Resume](C:\Users\dagra\OneDrive - UW\Documents\Job\Resume_Divya Agrawal.pdf)
+📄 [Download my Resume](Resume_Divya Agrawal.pdf)
 
 ---
 
