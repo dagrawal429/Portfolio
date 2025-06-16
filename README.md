@@ -6,7 +6,7 @@ I'm Divya Agrawal, an experienced Project and Program Manager with 5+ years of d
 ---
 
 ## 💼 Resume
-📄 [Download my Resume](./Resume_DivyaAgrawal.pdf)
+📄 [Download my Resume](C:\Users\dagra\OneDrive - UW\Documents\Job\Resume_Divya Agrawal.pdf)
 
 ---
 
@@ -41,8 +41,26 @@ The MSIM program has helped me become a product and project management professio
 I developed strong foundational programming knowledge in **C, Python, MATLAB**, along with understanding of probability, statistics, and communication skills. Through extracurricular activities, I refined my leadership and strategic event coordination skills.
 
 ---
+## 🏆 Awards & Recognition
 
-## 📊 Featured Project: AI in Recruitment – Fair Hiring Decision Framework
+### 🎓 Hall of Fame & Silver Medalist – 2017  
+*Thadomal Shahani Engineering College, Mumbai University*  
+Represented the class in the college accreditation process, contributing to academic evaluation and institutional improvements. Achieved top scorer status, demonstrating strong academic performance. Actively engaged in social service initiatives while serving as the Treasurer of IEEE, fostering leadership and organizational growth. 
+
+### 🥇 Ace Award – Accenture (May 2021)  
+Recognized for outstanding performance, successfully delivering key product features while actively resolving client and user issues through frequent engagement with the feedback portal. Led efforts to motivate the team and introduced innovative improvements in the documentation process to enhance efficiency and clarity. 
+
+### 🏅 Team Lead Award – Accenture (Jul 2022)  
+Awarded for exceptional leadership in managing multiple projects across global teams in different time zones. Spearheaded collaboration, optimized workflows, and led A/B testing initiatives to enhance product(software) performance. Demonstrated adaptability, strategic planning, and problem-solving to drive team success and efficiency
+---
+
+## 💼 Licenses & Certifications
+
+- **Google Project Management Professional Certificate**, Google – *Issued Aug 2023*  
+- **Microsoft Azure Cloud Fundamentals**, Microsoft – *Issued May 2024*  
+
+---
+## 📊 Featured Project: AI in Recruitment – Fair Hiring Decision Framework (2025)
 
 This project explores AI-driven hiring models and their biases. It combines project planning, data analysis, and ethical considerations—a unique intersection of management and data.
 
@@ -52,8 +70,8 @@ This project explores AI-driven hiring models and their biases. It combines proj
 - Delivered **executive summaries and visualizations** using Power BI, R, and statistical reports.
 - Promoted ethical AI hiring through **bias mitigation** strategies.
 
-📂 [Read full report](./final_project/FinalProject_572_DivyaAgrawal.pdf)  
-📜 [View K2 Clustering Plot](./final_project/K2_plot_Module10.pdf)
+📂 [Read full report](C:\Users\dagra\OneDrive - UW\Desktop\UW\IMT 572\Final Project\AI Recruitment Algorithm Analysis.pdf)  
+📜 [View K2 Clustering Plot](C:\Users\dagra\OneDrive - UW\Desktop\UW\IMT 572\Final Project\Plots.pdf)
 
 ---
 
@@ -66,7 +84,7 @@ This project explores AI-driven hiring models and their biases. It combines proj
 
 ---
 
-# Phone Usage & Workplace Productivity – Exploratory Study
+# Phone Usage & Workplace Productivity – Exploratory Study (2025)
 
 ## Objective
 To investigate the impact of mobile phone usage—especially social media scrolling—on productivity and anxiety at work.
@@ -112,23 +130,18 @@ Inspired by the growing digital threat landscape, I aim to explore:
 
 > Combining data governance and cybersecurity is the next impactful direction I plan to pursue.
 
+## 🌱 Extracurricular Activities
 
-## 📁 Repository Contents
+### 🇮🇳 NSS (National Social Service), India (2013–2015)
+- Taught blind students, participated in cleanliness drives and tree plantation activities.
+- Promoted social responsibility and community engagement.
 
-| File | Description |
-|------|-------------|
-| `Resume_DivyaAgrawal.pdf` | Updated professional resume |
-| `final_project/FinalProject_572_DivyaAgrawal.pdf` | Full project report on AI in hiring |
-| `final_project/recruitment_bias_analysis_code.R` | Reconstructed R code used in analysis |
-| `final_project/K2_plot_Module10.pdf` | Visualization output used in fairness analysis |
+### 🔬 IEEE EMBS (Engineering in Medicine & Biology Society)
+- Served as **Treasurer**, organized knowledge-sharing events with global professionals.
+- Published the IEEE newsletter *“Biobytes”*, enhancing community engagement and communication.
 
----
 
 ## 📫 Contact
 📧 dagrawal429@gmail.com  
 🔗 [LinkedIn](https://www.linkedin.com/in/divya-dilipkumar-agrawal-784a71115)
 
----
-
-## 📜 License
-This repository is open-source under the [MIT License](./LICENSE).
