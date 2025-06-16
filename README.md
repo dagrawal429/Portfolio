@@ -50,8 +50,9 @@ Represented the class in the college accreditation process, contributing to acad
 ### 🥇 Ace Award – Accenture (May 2021)  
 Recognized for outstanding performance, successfully delivering key product features while actively resolving client and user issues through frequent engagement with the feedback portal. Led efforts to motivate the team and introduced innovative improvements in the documentation process to enhance efficiency and clarity. 
 
-### 🏅 Team Lead Award – Accenture (Jul 2022)  
+### 🏅 Team Lead Award – Accenture (Jul 2022) 
 Awarded for exceptional leadership in managing multiple projects across global teams in different time zones. Spearheaded collaboration, optimized workflows, and led A/B testing initiatives to enhance product(software) performance. Demonstrated adaptability, strategic planning, and problem-solving to drive team success and efficiency
+
 ---
 
 ## 💼 Licenses & Certifications
