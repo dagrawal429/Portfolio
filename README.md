@@ -1,7 +1,7 @@
 # Divya Agrawal – Project / Program Management Portfolio
 
 🎯 **Welcome!**  
-I'm Divya Agrawal, an experienced Project and Program Manager with 5+ years of delivering high-impact enterprise solutions. I specialize in cross-functional coordination, stakeholder engagement, risk governance, and leveraging data for strategic insights.
+Experienced Program, Product, and Project Manager with over 5 years in enterprise project delivery and Business Intelligence. Proficient in Power BI, SQL, R, and Python. Skilled in cross-functional team leadership, stakeholder management, data analysis, and strategic reporting to drive operational efficiency and informed decision-making across agile and waterfall environments.
 
 ---
 
