@@ -135,7 +135,7 @@ Inspired by the growing digital threat landscape, I aim to explore:
 ## 🌱 Extracurricular Activities
 
 ### 🇮🇳 NSS (National Social Service), India (2013–2015)
-- Taught blind students, participated in cleanliness drives and tree plantation activities.
+- Taught visually impaired students, participated in cleanliness drives and tree plantation activities.
 - Promoted social responsibility and community engagement.
 
 ### 🔬 IEEE EMBS (Engineering in Medicine & Biology Society)
