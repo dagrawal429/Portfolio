@@ -1,0 +1,243 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+#---
+#output:
+#  word_document: default
+# html_document: default
+#  pdf_document: default
+#---
+# ---
+#title: "FinalProject_572_Recruitment"
+#output: html_document
+#date: "2025-05-27"
+#Name: Divya Agrawal
+# ---
+
+# Load necessary libraries
+library(dplyr)      # Data manipulation
+library(ggplot2)    # Visualization
+library(caret)      # Machine Learning
+library(corrplot)   # Correlation visualization
+library(car)        # Regression diagnostics
+library(DALEX)      # Bias analysis with SHAP values
+library(rpart)      # Decision Trees
+library(rpart.plot) # Decision Tree Visualization
+library(fastshap)
+library(modeldata)
+library(tidyverse)
+library(MLmetrics)
+library(randomForest)
+library(class)
+
+# Load the dataset from specified file path
+df <- read.csv("C:/Users/dagra/Downloads/recruitment_data.csv")
+
+# Handle missing values
+df <- na.omit(df)
+
+# Convert categorical variables to factors
+df$Gender <- as.numeric(as.factor(df$Gender))
+df$EducationLevel <- as.numeric(as.factor(df$EducationLevel))
+df$RecruitmentStrategy <- as.numeric(as.factor(df$RecruitmentStrategy))
+df$HiringDecision <- as.numeric(as.factor(df$HiringDecision))
+
+# Exploratory Data Analysis
+summary(df)
+
+# Correlation Heatmap (Excluding HiringDecision):
+
+corr_matrix <- cor(df %>% select_if(is.numeric))
+corrplot(corr_matrix, method = "circle", tl.cex = 0.7)
+
+# Identify statistically significant variables using simple linear regression
+sig_vars <- list()
+for (col in colnames(df)[-which(names(df) == "HiringDecision")]) {
+  model <- lm(HiringDecision ~ df[[col]], data = df)
+  (p_val <- summary(model)$coefficients[2,4])
+  if (p_val < 0.05) {
+    sig_vars[[col]] <- p_val
+  }
+}
+(sig_vars <- sort(unlist(sig_vars), decreasing = FALSE))
+
+# Select top 2-3 variables with highest R²
+best_r2_vars <- list()
+for (var in names(sig_vars)) {
+  model <- lm(HiringDecision ~ df[[var]], data = df)
+  best_r2_vars[[var]] <- summary(model)$r.squared
+}
+(best_r2_vars <- sort(unlist(best_r2_vars), decreasing = TRUE)[1:3])
+
+# Perform multivariate regression with selected variables
+final_model <- lm(HiringDecision ~ df[[names(best_r2_vars)[1]]] + 
+                    df[[names(best_r2_vars)[2]]] + 
+                    df[[names(best_r2_vars)[3]]], data = df)
+
+summary(final_model)
+
+# Bias & Fairness Analysis
+gender_bias <- tapply(df$HiringDecision, df$Gender, mean)
+edu_bias <- tapply(df$HiringDecision, df$EducationLevel, mean)
+dist_bias <- cor(df$DistanceFromCompany, as.numeric(df$HiringDecision))
+
+# Gender Bias Plot
+ggplot(df, aes(x = Gender, fill = HiringDecision, group = HiringDecision)) +
+  geom_bar(position = "fill") +
+  labs(title = "Gender Bias in Hiring Decisions", x = "Gender", y = "Proportion Hired") +
+  theme_minimal()
+
+# Education Level Bias Plot
+ggplot(df, aes(x = EducationLevel, fill = HiringDecision, group = HiringDecision)) +
+  geom_bar(position = "fill") +
+  labs(title = "Education Level & Hiring Decisions", x = "Education Level", y = "Proportion Hired") +
+  theme_minimal()
+
+# Distance vs Hiring Decision Plot
+ggplot(df, aes(x = DistanceFromCompany, y = HiringDecision, group = HiringDecision)) +
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "lm", col = "red") +
+  labs(title = "Impact of Distance on Hiring Decisions", x = "Distance from Company", y = "Hiring Decision") +
+  theme_minimal()
+
+# Machine Learning Models for Candidate Evaluation
+set.seed(123)
+
+# Ensure HiringDecision is binary (0 or 1)
+df$HiringDecision <- ifelse(df$HiringDecision == 1, 1, 0)
+
+randomorder <- sample(nrow(df))
+df <- df[randomorder,]
+split <- round(nrow(df) * .2)
+test_data <- df[1:split,]
+train_data <- df[(split + 1):nrow(df),]
+
+# Logistic Regression Model
+log_model <- glm(HiringDecision ~ ., data = train_data, family = binomial)
+summary(log_model)
+train_data <- train_data %>% 
+  mutate(predict = predict(log_model, type = 'response'),
+         predict_binary = if_else(predict > 0.5, 1, 0))
+# Accuracy and Confusion matrix of train log regression model        
+Accuracy_train_logreg = Accuracy(y_pred = train_data$predict_binary, y_true                =train_data$HiringDecision)
+
+CM_train_logreg = ConfusionMatrix(y_pred = train_data$predict_binary, y_true =train_data$HiringDecision)
+
+print(paste("Accuracy of log Reg train model",Accuracy_train_logreg*100, "%" ))
+
+
+# Accuracy and Confusion matrix of test log regression model
+test_data <- test_data %>% 
+  mutate(predict = predict(log_model, type = 'response', newdata = test_data),
+         predict_binary = if_else(predict > 0.5, 1, 0))
+summary(log_model)
+         
+#Now we will use those predictions to calculate accuracy and a confusion matrix.
+
+Accuracy_test_logreg = Accuracy(y_pred = test_data$predict_binary, y_true                =test_data$HiringDecision)
+
+CM_test_logreg = ConfusionMatrix(y_pred = test_data$predict_binary, y_true =test_data$HiringDecision)
+
+print(paste("Accuracy of log Reg test model",Accuracy_train_logreg * 100, "%" ))
+
+
+
+# Decision Tree Model
+
+tree_model <- rpart(HiringDecision ~ ., data = train_data)
+rpart.plot(tree_model, main = "Decision Tree for Hiring Predictions")
+
+train_data <- train_data %>% 
+  mutate(predict_tm = predict(tree_model, newdata= train_data))
+  
+test_data <- test_data %>% 
+  mutate(predict_tm = predict(tree_model, newdata= test_data))
+  
+
+# Accuracy and Confusion matrix of test Decison Tree model
+Accuracy_test_DTM = Accuracy(y_pred = test_data$predict_tm, y_true =test_data$HiringDecision)
+
+(CM_test_DTM = ConfusionMatrix(y_pred = test_data$predict_tm, y_true =test_data$HiringDecision))
+
+print(paste("Accuracy of Decision Tree test model",Accuracy_test_DTM * 100, "%" ))
+
+#Random Forest
+random_forest_model = randomForest(HiringDecision ~., data=train_data)
+test_data <- test_data %>% 
+  mutate(predict_rf = predict(random_forest_model, newdata= test_data))
+  
+Accuracy_test_RF = Accuracy(y_pred = test_data$predict_rf, y_true =test_data$HiringDecision)
+
+(CM_test_RF = ConfusionMatrix(y_pred = test_data$predict_rf, y_true =test_data$HiringDecision))
+
+print(paste("Accuracy of Rain Forest test model",Accuracy_test_RF * 100, "%" ))
+
+#knn prediction
+
+knn_prediction <- knn(train = dplyr :: select(train_data, - HiringDecision),
+    test = dplyr ::select(test_data, - HiringDecision, - predict_rf),
+    cl = train_data$HiringDecision,
+    k = 3)
+
+Accuracy_test_knn = Accuracy(y_pred = knn_prediction, y_true = test_data$HiringDecision)
+CM_test_knn = ConfusionMatrix(y_pred = knn_prediction, y_true = test_data$HiringDecision)
+
+
+
+# SHAP Analysis for Feature Importance: 
+
+#Binary target variable
+#train_data$HiringDecision <- ifelse(train_data$HiringDecision == 1, 1, 0)
+# Define predictor variables (excluding HiringDecision)
+colnames(train_data)
+X_train <- train_data %>% dplyr::select(-HiringDecision)
+str(X_train)
+sum(is.na(X_train))
+
+# Ensure no character columns remain
+X_train <- X_train %>% mutate_if(is.character, as.numeric)
+
+# Set default value for X (avoid missing argument error)
+default_X <- as.data.frame(X_train)
+
+# Define predictor function for logistic regression
+pred_wrapper <- function(model, newdata) {
+  predict(model, newdata = newdata, type = "response")
+}
+
+
+explainer <- DALEX::explain(
+  model = log_model,
+  data = X_train,
+  y = train_data$HiringDecision,
+  predict_function = pred_wrapper,
+  label = "Logistic Regression"
+)
+
+                     
+# Compute SHAP values for a test observation
+
+shap_values <- predict_parts(explainer, new_observation = test_data[1, setdiff(names(test_data), "HiringDecision")])
+
+
+# Print SHAP values
+print(shap_values)
+
+# Recommendations
+cat("Key Predictors of Hiring Decision:\n", names(best_r2_vars), "\n")
+cat("Bias Check:\n")
+cat("Gender Bias - Average hiring decision per gender:", gender_bias, "\n")
+cat("Education Bias - Average hiring decision per education level:", edu_bias, "\n")
+cat("Distance Bias - Correlation between Distance and Hiring Decision:", dist_bias, "\n")
+
+# Identify best-performing model based on accuracy  
+print(paste(
+  "Accuracy_test_logreg:", Accuracy_test_logreg * 100,"%",
+  "\n", "Accuracy_test_DTM:", Accuracy_test_DTM * 100,"%",
+  "\nAccuracy_test_RF:", Accuracy_test_RF * 100,"%",
+  "\nAccuracy_test_knn:", Accuracy_test_knn * 100,"%"
+))
+
+
