@@ -73,7 +73,7 @@ This project explores AI-driven hiring models and their biases. It combines proj
 - Promoted ethical AI hiring through **bias mitigation** strategies.
 
 📂 [Read full report](C:\Users\dagra\OneDrive - UW\Desktop\UW\IMT 572\Final Project\AI Recruitment Algorithm Analysis.pdf)  
-📜 [View K2 Clustering Plot](C:\Users\dagra\OneDrive - UW\Desktop\UW\IMT 572\Final Project\Plots.pdf)
+📜 [View K2 Clustering Plot](https://github.com/dagrawal429/Portfolio/blob/c98dbfed5aa3f6f8c4f8178314a7e36232f158f2/Plots.pdf)
 
 ---
 
