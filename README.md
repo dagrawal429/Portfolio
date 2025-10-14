@@ -1,7 +1,7 @@
-# Divya Agrawal – Project / Program Management Portfolio
+# Divya Agrawal –Portfolio
 
 🎯 **Welcome!**  
-Experienced Program, Product, and Project Manager with over 5 years in enterprise project delivery and Business Intelligence. Proficient in Power BI, SQL, R, and Python. Skilled in cross-functional team leadership, stakeholder management, data analysis, and strategic reporting to drive operational efficiency and informed decision-making across agile and waterfall environments.
+Associate Product Manager with 5+ years of experience in enterprise delivery, product operations, and business intelligence. I specialize in streamlining processes, driving cross-functional execution, and translating complex requirements into actionable product strategies. My background blends technical fluency with structured thinking—helping teams move faster and smarter across Agile and Waterfall environments.
 
 ---
 
@@ -17,16 +17,19 @@ Experienced Program, Product, and Project Manager with over 5 years in enterpris
 
 ### **Senior Software Analyst – Accenture, India (06/2021 – 01/2023)**
 
-- Managed large-scale projects, leading a 17-member team using Agile frameworks.
-- Improved efficiency by 30% via automation tools and reduced delays by 25%.
-- Built Power BI/Tableau dashboards, increasing executive visibility by 40%.
+- Owned and drove end-to-end product requirements across engineering, design, and business teams.
+- Led cross-functional execution for global clients, improving delivery speed and reducing blockers.
+- Partnered with stakeholders to prioritize features, manage trade-offs, and align on roadmap goals.
+- Built Power BI/Tableau dashboards to track KPIs and improve visibility for leadership.
+- Introduced process improvements that reduced delays by 25% and increased efficiency by 30%
+
 
 ### **Software Analyst – Accenture, India (09/2017 – 05/2021)**
 
-- Managed timelines, budgets, and resource allocation across business units.
-- Automated regression testing using Selenium, reducing test time by 50%.
-- Developed pricing models, boosting client profitability by 20%.
-
+- Managed project/product timelines, budgets, and resource allocation across multiple business units.
+- Automated regression testing using Selenium, reducing QA cycles by 50%.
+- Developed pricing models and business cases that improved client profitability by 20%.
+- Supported go-to-market planning and feature rollout across consumer-facing platforms.
 ---
 
 ## 🎓 Education
@@ -34,12 +37,12 @@ Experienced Program, Product, and Project Manager with over 5 years in enterpris
 ### **Master of Science in Information Management**  
 **University of Washington**, 4.0/4.0 GPA | *Expected: 01/2025 – 12/2025*  
 
-The MSIM program has helped me become a product and project management professional with expertise in BI. I’ve gained strong skills in data research, analysis, and visualization using **R, SQL, Power BI, Tableau, and QlikView**, while also strengthening my leadership, ethical decision-making, and consulting capabilities.
+Focused on product strategy, data visualization, and AI architecture. Gained hands-on experience in Snowflake, Power BI, R, SQL, and ethical decision-making frameworks.
 
 ### **Bachelor of Engineering**  
 **Mumbai University**, 3.4/4.0 GPA | *08/2013 – 06/2017*  
 
-I developed strong foundational programming knowledge in **C, Python, MATLAB**, along with understanding of probability, statistics, and communication skills. Through extracurricular activities, I refined my leadership and strategic event coordination skills.
+Built foundational skills in Python, MATLAB, and statistical modeling. Led student initiatives and coordinated strategic events.
 
 ---
 ## 🏆 Awards & Recognition
@@ -52,7 +55,7 @@ Represented the class in the college accreditation process, contributing to acad
 Recognized for outstanding performance, successfully delivering key product features while actively resolving client and user issues through frequent engagement with the feedback portal. Led efforts to motivate the team and introduced innovative improvements in the documentation process to enhance efficiency and clarity. 
 
 ### 🏅 Team Lead Award – Accenture (Jul 2022) 
-Awarded for exceptional leadership in managing multiple projects across global teams in different time zones. Spearheaded collaboration, optimized workflows, and led A/B testing initiatives to enhance product(software) performance. Demonstrated adaptability, strategic planning, and problem-solving to drive team success and efficiency
+Awarded for exceptional leadership in managing multiple projects across global teams in different time zones. Spearheaded collaboration, optimized workflows, and led A/B testing initiatives to enhance product performance. Demonstrated adaptability, strategic planning, and problem-solving to drive team success and efficiency
 
 ---
 
