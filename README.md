@@ -48,8 +48,7 @@ Built foundational skills in Python, MATLAB, and statistical modeling. Led stude
 ---
 ## 🏆 Awards & Recognition
 
-### 🎓Medalist – 2017  
-*Thadomal Shahani Engineering College, Mumbai University*  
+### 🎓Medalist – Thadomal Shahani Engineering College, Mumbai University (December 2016)  
 Top scorer and class representative during college accreditation. Treasurer of IEEE EMBS.
 
 ### 🥇 Ace Award – Accenture (May 2021)  
