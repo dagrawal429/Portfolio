@@ -126,16 +126,16 @@ Although results were inconclusive, the project laid groundwork for:
 - Need for a blend of **quantitative + qualitative** methods
 - How to **manage research setbacks** transparently in a project lifecycle
 
-**📊 Business Intelligence Project: Retail Sales BI Pipeline – Snowflake & Tableau (2025)**
+## 📊 Business Intelligence Project: Retail Sales BI Pipeline – Snowflake & Tableau (2025)**
 Built a scalable BI pipeline to analyze retail sales performance and deliver executive-ready dashboards.
 
-**Highlights:**
+## Highlights:**
 - Designed star and snowflake schemas with staging, dimension, and fact tables in Snowflake.
 - Loaded and transformed sales data using SQL, applying business logic for trend analysis.
 - Created interactive Tableau dashboards to visualize KPIs, regional performance, and seasonal trends.
 - Documented schema logic for reusability and scalability across analytics workflows.
 
-**Skills Demonstrated:**
+## Skills Demonstrated:**
 - Data modeling, ETL/ELT, KPI dashboards, SQL optimization, stakeholder reporting
 
 
