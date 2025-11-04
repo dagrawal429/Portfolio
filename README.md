@@ -1,4 +1,4 @@
-# Divya Agrawal –Portfolio
+# Divya Agrawal – Portfolio
 
 🎯 **Welcome!**  
 With 5+ years of experience in enterprise delivery, product operations, and business intelligence, I specialize in translating complex requirements into actionable strategies. I bring a unique blend of technical fluency, structured thinking, and cross-functional leadership—helping teams move faster and smarter across Agile and Waterfall environments. Currently pursuing my MS in Information Management at the University of Washington, I’m focused on product strategy, financial modeling, and ethical AI.
