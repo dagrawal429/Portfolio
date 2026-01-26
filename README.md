@@ -6,7 +6,7 @@ With 5+ years of experience in enterprise delivery, product operations, and busi
 ---
 
 ## 💼 Resume
-📄 [Download my Resume].(https://github.com/dagrawal429/Portfolio/blob/568ec239efc1695127f1ab64086edd458f97dda7/Divya_Agrawal_Resume.pdf)
+📄 [Download my Resume](https://github.com/dagrawal429/Portfolio/blob/568ec239efc1695127f1ab64086edd458f97dda7/Divya_Agrawal_Resume.pdf)
 
 ---
 
